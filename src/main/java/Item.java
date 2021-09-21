@@ -31,4 +31,13 @@ public class Item {
     public String toString() {
         return  Id + ";" + Name + ';'+ Value +";" + Stock;
     }
+
+    public void show() {
+        System.out.println("-----------");
+        System.out.println("Id: " + this.Id);
+        System.out.println("Name: " + this.Name);
+        System.out.println("Value: " + this.Value);
+        System.out.println("Stock: " + this.Stock);
+        System.out.println("-----------");
+    }
 }

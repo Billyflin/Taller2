@@ -41,7 +41,6 @@ public class ListaDeCompras {
     public static File crear(String ruta) {
         var archivo = new File(ruta);
         try {
-
             if(!archivo.exists()) {                 // exists() revisa que exista un archivo en la ruta
                 if (!archivo.createNewFile()) {     // .createNewFile crea un archivo real en el pc
                     throw new IOException();
@@ -49,7 +48,7 @@ public class ListaDeCompras {
             }
         } catch (IOException e) {
             System.err.println("Fallo al crear el archivo: " + e.getMessage());   // e.getMessage imprime información
-                                                                                  // adicional sobre el error.
+            // adicional sobre el error.
             return null;
         }
         return archivo;

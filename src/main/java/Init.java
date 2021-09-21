@@ -13,6 +13,13 @@ public class Init {
 
     public static void main(String[] args) throws FileNotFoundException {
         csvRead();
+        showItems(items);
+    }
+    public static void showItems(ArrayList<Item> i){
+        for (Item a:
+             i) {
+            a.show();
+        }
     }
 
     public static void csvRead() throws FileNotFoundException {
@@ -27,7 +34,6 @@ public class Init {
                 int cantidad= Integer.parseInt(nextLine[2]);
                 items.add(new Item(id, nombre, precio, cantidad));
             }
-
         } catch (Exception e) {
             System.out.println(e);
 
