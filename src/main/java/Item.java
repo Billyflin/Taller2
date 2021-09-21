@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+
 public class Item {
+    public static ArrayList<Item> items =new ArrayList<>();
     private final int Id;
     private final String Name;
     private final int Value;
